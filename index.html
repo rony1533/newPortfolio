@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfólio — Seu Nome</title>
+  <meta name="description" content="Página de portfólio com barra lateral, pesquisa e avatar." />
+  <link rel="stylesheet" href="/style/main.css">
+</head>
+
+<body>
+  <div class="layout">
+    <aside>
+      <div class="brand">
+        <!-- Foto do perfil (substitua o SVG por uma imagem sua, se quiser) -->
+        <img class="avatar" alt="Foto de perfil"
+          src='https://avatars.githubusercontent.com/u/48607926?s=96&v=4" width="128" height="128" viewBox="0 0 128 128"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="%237c5cff"/><stop offset="1" stop-color="%2319d3da"/></linearGradient></defs><rect width="128" height="128" rx="64" fill="url(%23g)"/><circle cx="64" cy="52" r="24" fill="%23fff" fill-opacity=".9"/><path d="M20 116c6-22 26-36 44-36s38 14 44 36" fill="%23fff" fill-opacity=".9"/></svg>' />
+        <div>
+          <p class="title">Rony Alves Sobral</p>
+          <p class="subtitle">Desenvolvedor back-end</p>
+          <p class="subtitle">São Paulo/Brasil</p>
+        </div>
+      </div>
+
+      <form class="search" role="search" aria-label="Buscar projetos">
+        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor"
+            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16a6.471 6.471 0 0 0 4.23-1.57l.27.28v.79l5 5 1.5-1.5-5-5Zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14Z" />
+        </svg>
+        <label class="visually-hidden" for="q">Pesquisar projetos</label>
+        <input id="q" name="q" type="search" placeholder="Pesquisar projetos... (ex: React, dashboard)"
+          autocomplete="off" />
+      </form>
+
+      <nav aria-label="Seções do site">
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="meta">
+        <div>🌐 <a href="https://www.linkedin.com/in/ronyasobral/">LinkedIn | ronyasobral</a></div>
+        <div>📍 Remoto · Híbrido</div>
+        <div>✉️ <a href="mailto:rony.alvessobral@hotmail.com">rony.alvessobral@hotmail.com</a></div>
+      </div>
+    </aside>
+
+    <main>
+      <header class="hero">
+        <div>
+          <h1>Olá! Eu sou <span
+              style="background:linear-gradient(90deg,var(--brand),var(--brand-2)); -webkit-background-clip:text; background-clip:text; color:transparent;">Rony</span>.
+          </h1>
+          <p>Profissional especializado em desenvolvimento Full Stack, com sólida experiência em front-end, back-end,
+            bancos de dados e integrações. Comprometido com a criação de soluções eficientes, escaláveis e de alta
+            qualidade.</p>
+        </div>
+      </header>
+
+      <section id="sobre" class="card" aria-labelledby="h-sobre">
+        <h2 id="h-sobre">Sobre mim</h2>
+        <p>Desenvolvedor Full Stack com mais de 3 anos de experiência em projetos de tecnologia,
+          atuando principalmente em ambientes de fintech. Experiência em migração de sistemas
+          legados para microsserviços, desenvolvimento de soluções escaláveis e otimização de
+          experiência do usuário. Especialista em Angular, TypeScript, Java, Kotlin e Spring Boot, com
+          vivência em cloud (AWS e Azure). Busco sempre aprimorar minhas habilidades e contribuir
+          com soluções que gerem impacto positivo para os clientes.
+        </p>
+        <div class="kpis" aria-label="Indicadores">
+          <div id="experienceYear" class="kpi">+4 anos de experiência</div>
+
+        </div>
+      </section>
+
+      <section id="habilidades" class="card" aria-labelledby="h-habilidades">
+        <h2 id="h-habilidades">Habilidades</h2>
+        <div class="skills">
+          <span class="skill">Java</span>
+          <span class="skill">Kotlin</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">TypeScript</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">Angular</span>
+          <span class="skill">PrimeNG</span>
+        </div>
+      </section>
+
+      <section id="projetos" class="card" aria-labelledby="h-projetos">
+        <h2 id="h-projetos">Projetos em destaque</h2>
+        <div id="projects" class="projects">
+          <article class="project">
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit</h3>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odit delectus, placeat
+              similique soluta necessitatibus pariatur sapiente aperiam officia dolorum voluptas nemo accusamus. Qui
+              officiis nesciunt cumque dicta, error nulla!</p>
+            <div class="tags"><span class="tag">JavaScript</span><span class="tag">D3</span><span
+                class="tag">Analytics</span></div>
+          </article>
+          <article class="project">
+            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing</h3>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odit delectus, placeat
+              similique soluta necessitatibus pariatur sapiente aperiam officia dolorum voluptas nemo accusamus. Qui
+              officiis nesciunt cumque dicta, error nulla!</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span
+                class="tag">Acessibilidade</span></div>
+          </article>
+          <article class="project">
+            <h3>Lorem, ipsum dolor sit amet</h3>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odit delectus, placeat
+              similique soluta necessitatibus pariatur sapiente aperiam officia dolorum voluptas nemo accusamus. Qui
+              officiis nesciunt cumque dicta, error nulla!</p>
+            <div class="tags"><span class="tag">React Native</span><span class="tag">UX</span></div>
+          </article>
+          <article class="project">
+            <h3>Lorem, ipsum dolor sit amet</h3>
+            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis odit delectus, placeat
+              similique soluta necessitatibus pariatur sapiente aperiam officia dolorum voluptas nemo accusamus. Qui
+              officiis nesciunt cumque dicta, error nulla!</p>
+            <div class="tags"><span class="tag">React</span><span class="tag">Next.js</span><span
+                class="tag">Performance</span></div>
+          </article>
+          <p id="empty" class="empty" role="status">Nenhum projeto encontrado para sua pesquisa.</p>
+        </div>
+      </section>
+
+      <section id="contato" class="card" aria-labelledby="h-contato">
+        <h2 id="h-contato">Contato</h2>
+        <form onsubmit="event.preventDefault(); alert('Obrigado pela mensagem! Entrarei em contato em breve.');">
+          <label style="display:grid">
+            <span>Seu nome</span>
+            <input required type="text" name="nome" placeholder="Fulano Silva" />
+          </label>
+          <label style="display:grid">
+            <span>Seu e‑mail</span>
+            <input required type="email" name="email" placeholder="fulanosilva@hotmail.com" />
+          </label>
+          <label style="display:grid">
+            <span>Mensagem</span>
+            <textarea required name="mensagem" placeholder="Como posso ajudar?"></textarea>
+          </label>
+          <button type="submit">Enviar mensagem</button>
+        </form>
+        <footer>
+          <small>Prefere falar por e‑mail? <a
+              href="mailto:rony.alvessobral@hotmail.com">rony.alvessobral@hotmail.com</a></small>
+        </footer>
+      </section>
+
+      <footer>
+        <small>© <span id="year"></span> Rony Alves Sobral. Todos os direitos reservados.</small>
+      </footer>
+    </main>
+  </div>
+  <script src="/script/main.js"></script>
+</body>
+
+</html>
