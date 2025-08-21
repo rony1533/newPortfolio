@@ -1,6 +1,6 @@
 const yearNow = new Date().getFullYear();
 document.getElementById('year').textContent = yearNow;
-document.getElementById('experienceYear').textContent = "+" + (yearNow - new Date(2021, 5).getFullYear()) + " anos de experiência";
+document.getElementById('experienceYear').textContent = (yearNow - new Date(2021, 5).getFullYear());
 
 // Pesquisa de projetos (filtra por título e tags)
 const input = document.getElementById('q');
